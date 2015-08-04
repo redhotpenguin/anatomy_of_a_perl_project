@@ -5,7 +5,7 @@
 ### Step 1: Setting up our project
 
 ### Step 2: Coding & documenting
-    * Prime.pm
+    Prime.pm
 
 ### Step 3: Writing examples & tests
     * bin/prime.pl
