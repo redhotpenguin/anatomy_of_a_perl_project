@@ -16,6 +16,8 @@ package Math::Prime;
 
 =cut
 
+
+# do this in every single package, until you understand when not to
 use strict;
 use warnings;
 
