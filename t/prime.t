@@ -30,6 +30,9 @@ is( Math::Prime::is_prime(4), undef, '4 is not a prime number' );
 
 is( Math::Prime::is_prime(5), 1, '5 is a prime number' );
 
+
+# let's test the first hundred primes, and first hundred non primes
+
 my @first_hundred_primes = (
     2,   3,   5,   7,   11,  13,  17,  19,  23,  29,
     31,  37,  41,  43,  47,  53,  59,  61,  67,  71,

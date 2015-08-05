@@ -53,14 +53,28 @@ sub is_prime {
     my $prime = 3;
 
     # For each divisor checked, close the gap from both sides.
-    while ( ( $num / $prime ) > $prime ) {
+    while ( ( ( $num / $prime ) + 2 ) > $prime ) {
 
-        if ( $num % $prime == 0 ) {
+        if ( ( $num % $prime ) == 0 ) {
             return;
         }
         $prime = $prime + 2;
     }
     return 1;
 }
+
+=head1 DESCRIPTION
+
+This example program and package were inspired and shameless stolen from
+'The anatomy of a Go Project' - http://darian.af/post/the-anatomy-of-a-golang-project/
+
+At the inspiration of twitter/genehack, I decided to try to write something
+similar for Perl.
+
+=head1 AUTHOR
+
+Fred Moyer C<fred@redhotpenguin.com>
+
+=cut
 
 1;
