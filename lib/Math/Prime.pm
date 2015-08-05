@@ -16,7 +16,6 @@ package Math::Prime;
 
 =cut
 
-
 # do this in every single package, until you understand when not to
 use strict;
 use warnings;
@@ -54,7 +53,7 @@ sub is_prime {
     my $prime = 3;
 
     # For each divisor checked, close the gap from both sides.
-    while ( int( $num / $prime ) > $prime ) {
+    while ( ( $num / $prime ) > $prime ) {
 
         if ( $num % $prime == 0 ) {
             return;
